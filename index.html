@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Termo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>TERMO</h1>
+      <p class="subtitle">Descubra a palavra em 6 tentativas</p>
+    </header>
+
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+
+    <section id="board" class="board" aria-label="Tabuleiro"></section>
+
+    <section id="keyboard" class="keyboard" aria-label="Teclado virtual"></section>
+
+    <button id="new-game" class="new-game" type="button">Nova partida</button>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+      <button id="modal-btn" type="button">Jogar novamente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
